@@ -869,9 +869,10 @@ nav ul li a.active::after {
 }
 
 .news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: flex-start;
 }
 
 .news-card {
@@ -880,7 +881,10 @@ nav ul li a.active::after {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    flex: 1 1 300px; /* Minimum de 200px et peut se redimensionner jusqu'à 350px */
+    max-width: 400px; /* Largeur maximale de 350px */
 }
+
 
 .news-card:hover {
     transform: translateY(-5px);
@@ -1807,6 +1811,21 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
 }
+
+.success-message {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 @media screen and (max-width: 768px) {
     .project-content-wrapper {
