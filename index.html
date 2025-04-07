@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#E87E2F" />
   <title>ONG ACADI BENIN - Autonomisation des Communautés d'AFRIQUE</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="./WhatsApp Image 2025-03-04 à 11.25.10_814e2f6b.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -56,9 +55,9 @@
           durable
         </p>
         <div class="cta-buttons">
-          <a href="#comment-aider" class="btn btn-primary">Faire un don</a>
           <a href="#comment-aider" class="btn btn-secondary">Devenir bénévole</a>
           <a href="#projets" class="btn btn-outline">Découvrir nos projets</a>
+          <a href="#comment-aider" class="btn btn-primary">Faire un don</a>
         </div>
       </div>
       <div class="hero-slider">
@@ -100,11 +99,11 @@
       </div>
       <div class="impact-stats">
         <div class="stat">
-          <span class="number" data-count="3">0</span>
+          <span class="number" data-count="10">0</span>
           <p>Projets réalisés</p>
         </div>
         <div class="stat">
-          <span class="number" data-count="120">0</span>
+          <span class="number" data-count="520">0</span>
           <p>Bénéficiaires</p>
         </div>
         <div class="stat">
@@ -419,18 +418,18 @@
               Mettez vos compétences et votre temps au service de nos projets
               au Bénin.
             </p>
-            <form class="volunteer-form">
+            <form action="https://formspree.io/f/xvgkvqzj" method="POST" class="volunteer-form">
               <div class="form-group">
                 <label for="volunteer-name">Nom complet</label>
-                <input type="text" id="volunteer-name" placeholder="Votre nom et prénom" />
+                <input type="text" id="volunteer-name" name="name" placeholder="Votre nom et prénom" />
               </div>
               <div class="form-group">
                 <label for="volunteer-email">Email</label>
-                <input type="email" id="volunteer-email" placeholder="Votre adresse email" />
+                <input type="email" id="volunteer-email" name="email" placeholder="Votre adresse email" />
               </div>
               <div class="form-group">
                 <label for="volunteer-skills">Compétences</label>
-                <select id="volunteer-skills">
+                <select id="volunteer-skills" name="skills">
                   <option value="">Sélectionnez vos compétences</option>
                   <option value="education">Éducation</option>
                   <option value="health">Santé</option>
@@ -441,7 +440,7 @@
               </div>
               <div class="form-group">
                 <label for="volunteer-availability">Disponibilité</label>
-                <select id="volunteer-availability">
+                <select id="volunteer-availability" name="availability">
                   <option value="">Votre disponibilité</option>
                   <option value="ponctual">Ponctuelle</option>
                   <option value="regular">Régulière</option>
@@ -450,12 +449,13 @@
               </div>
               <div class="form-group">
                 <label for="volunteer-message">Message</label>
-                <textarea id="volunteer-message" placeholder="Parlez-nous de vos motivations"></textarea>
+                <textarea id="volunteer-message" name="message" placeholder="Parlez-nous de vos motivations"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">
                 Envoyer ma candidature
               </button>
             </form>
+            
           </div>
           <div class="help-card partnership">
             <div class="card-icon">
@@ -751,8 +751,8 @@
               </div>
               <div class="info-content">
                 <h3>Téléphone</h3>
-                <a style="color: black;text-decoration:underline" href="tel: 22996202007">+229 (01) 96 20 20 07</a
-                  href="tel: 22996202007">
+                <a style="color: black;text-decoration:underline" href="tel: 2290166962007">+229 (01) 66 96 20 07</a>
+              
               </div>
             </div>
             <div class="social-links">
@@ -880,8 +880,9 @@
               Tchirimina<br /><b>-</b>Département de l'Atlantique, Commune d'Abomey Calavi, Quartier Togba 
               <br /><b>-</b>Département de l'Atlantique, Commune de Ze, Quartier Adohounsa 
             </p>
-            <a href="tel: +229 (01) 96 96 20 07" class="__cf_email__">
-              <p>Tél: +229 (01) 96 96 20 07</p>
+            <a href="tel: +2290166962007" class="__cf_email__">
+              <p>Tél: +229 (01) 66 96 20 07</p>
+
             </a>
             <p>
               Email:
