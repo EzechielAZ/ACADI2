@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.textContent = "Envoi en cours...";
 
       try {
-        const response = await fetch(this.action, {
+        const response = await fetch('https://formspree.io/f/xnnpovkp', {
           method: "POST",
           body: formData,
           headers: { Accept: "application/json" },
